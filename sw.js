@@ -28,7 +28,7 @@ const updateTechnoPromise = new Promise(function(resolve, reject) {
         // pour chaque item : appel de l'api pour l'ajouter à la base
         technos.map(techno => {
             console.log('Attempting fetch', techno);
-            fetch('https://us-central1-pwa-techno-2020.cloudfunctions.net/addTechno', {
+            fetch('https://us-central1-pwa-technos-yasmine.cloudfunctions.net/addTechno', {
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json'
