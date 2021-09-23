@@ -69,7 +69,7 @@ if(navigator.serviceWorker) {
         
         	// tentative d'obtention d'une souscription
             // public vapid key générée par web-push, en prod appel d'api via fetch plutôt que static
-            const publicKey = "BN4YXZBpAD_ym_CHqvRQXB7UemsopIS06d3VE7DtQE2gzb28q25kgS02S-ijL1vQLTFSFjQngzZK_J7D92a48_8";
+            const publicKey = "BAVXzv0ZZxG7l78X0_L5CJxJMJxhvgn-hvCvWhl-da_ybdfBF4vVEURLp9ZD2E6F6D-hySGjhFYfCwefq03GR9g";
             console.log("publicKey", publicKey);
             registration.pushManager.getSubscription().then(subscription => {
             
@@ -118,7 +118,6 @@ function extractKeysFromArrayBuffer(subscription){
     console.log('p256dh key :', p256dh);
     console.log('auth key :', auth);
 }
-
 
 // 8.4 Récupération ou création d'une souscription auprès d'un push service
 // Fonction pour convertir string en array buffer pour envoie au push service
